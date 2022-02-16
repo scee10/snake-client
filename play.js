@@ -3,7 +3,7 @@ const net = require("net");
 // establishes a connection with the game server
 const connect = function () {
   const conn = net.createConnection({
-    host: "10.0.2.15",
+    host: "165.227.47.243",
     port: 50541
   });
 
@@ -18,21 +18,4 @@ const connect = function () {
 console.log("Connecting ...");
 connect();
 
-// console.log("Connecting ...");
-
-// ------------------
-
-// const net = require('net');
-// const stdin = process.stdin;
-// //We need to specify the address and the port to connect to
-// const client = net.createConnection({
-//   host: 'localhost',
-//   port: 3000
-// });
-// //We need the encoding to tell the server and the client what kind of data are we transfering
-// client.setEncoding('utf8');
-// //When I, the client finally connect...........
-// client.on('connect', function() {
-//   client.write('I have connected!!!');
-// })
-
+module.exports = connect;
